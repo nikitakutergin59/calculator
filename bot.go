@@ -17,7 +17,7 @@ import (
 )
 
 func main() {
-	botToken := os.Getenv("8183158892:AAE55IpXKtzipOyTq7TeCAMCkCE5j3mfVTA") // Получаем токен из переменной окружения
+	botToken := os.Getenv("BOT_TOKEN") // Получаем токен из переменной окружения
 	bot, err := tgbotapi.NewBotAPI(botToken)
 	if err != nil {
 		log.Panic(err)
